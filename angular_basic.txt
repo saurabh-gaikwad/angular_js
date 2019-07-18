@@ -1,0 +1,52 @@
+Advantages of AngularJS :
+1. Open source JavaScript MVC framework.
+2. Supported by Google
+3. No need to learn another scripting language. It's just pure JavaScript and HTML.
+4. Supports separation of concerns by using MVC design pattern.
+5. Built-in attributes (directives) makes HTML dynamic.
+6. Easy to extend and customize.
+7. Supports Single Page Application.
+8. Uses Dependency Injection.
+9. Easy to Unit test.
+10. REST friendly.
+
+
+AngularJS Library
+To download AngularJS library, go to "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"
+
+*AngularJS binds data to HTML using Expressions.*
+AngularJS expressions can be written inside double braces: {{ expression }}.
+
+AngularJS expressions can also be written inside a directive: ng-bind="expression".
+
+AngularJS will resolve the expression, and return the result exactly where the expression is written.
+
+AngularJS expressions are much like JavaScript expressions: They can contain literals, operators, and variables.
+
+Example {{ 5 + 5 }} or {{ firstName + " " + lastName }}
+
+
+Directive
+Directives are markers (attributes) on a DOM element that tell AngularJS to attach a specific behavior to that DOM element or even transform the DOM element and its children.
+
+Most of the directives in AngularJS are starting with ng. It stands for Angular. We have applied ng-app and ng-model directive in the above example.
+
+ng-app: The ng-app directive is a starting point. If AngularJS framework finds ng-app directive anywhere in the HTML document then it bootstraps (initializes) itself and compiles the HTML template.
+
+ng-model: The ng-model directive binds HTML element to a property on the $scope object. You will learn about this model later but for now let us consider this as a model property.
+
+Concept	
+Template		HTML with additional markup
+Directives		Extends the HTML with custom attributes and elements
+Model	   	     	The data shown to the user in the view and with which the user interacts
+Scope   		A context where the model is stored so that controllers, directives and expressions can access it
+Expressions		Executes JavaScript code inside brackets {{ }}.
+Compiler		Parses the template and instantiates directives and expressions
+Filter	   	     	Formats the value of an expression for display to the user
+View			what the user sees (the DOM)
+Data Binding		Sync data between the model and the view
+Controller		Maintains the application data and business logic
+Module			a container for different parts of an app including controllers, services, filters, directives which configure the Injector
+Service	 		Reusable business logic, independent of views
+Dependency Injection	Creates and wires objects and functions
+Injector		Dependency injection container
